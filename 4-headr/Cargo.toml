@@ -2,12 +2,13 @@
 name = "headr"
 version = "0.1.0"
 edition = "2021"
+authors = ["William Noble"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [dependencies]
-clap = "2.33"
+clap = { version = "4.2.5", features = ["derive"] }
 
 [dev-dependencies]
 assert_cmd = "2"
-predicates = "2"
+predicates = "3.0.3"
 rand = "0.8"

@@ -19,7 +19,7 @@ fn usage() -> TestResult {
         Command::cargo_bin(PRG)?
             .arg(flag)
             .assert()
-            .stdout(predicate::str::contains("USAGE"));
+            .stdout(predicate::str::contains("Usage"));
     }
     Ok(())
 }
@@ -157,7 +157,7 @@ fn spiders_n() -> TestResult {
 #[test]
 fn spiders_b() -> TestResult {
     run(
-        &["--number-non-blank", SPIDERS],
+        &["--number-nonblank", SPIDERS],
         "tests/expected/spiders.txt.b.out",
     )
 }
